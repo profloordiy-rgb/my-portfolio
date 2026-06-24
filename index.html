@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #3305ff;
+            text-align: center;
+        }
+        ul li {
+            display: inline-block;
+            position: relative;
+        }
+        ul ul li a{
+            display: block;
+            color: white;
+            text-align: center;
+
+        }
+        ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border:2px solid red;
+            border-radius: 5px;
+        }
+        ul li a:hover {
+            background-color: #13d63def;
+            color:black
+        }
+        li:hover ul{
+            display: block;
+            position: absolute;
+        }
+  </style>
+</head>
+<body>
+ <input type="number" id="marks" placeholder="Enter your marks">
+ <button onclick="checkMarks()">Check Grade</button>
+ <h2 id="result"></h2>
+    <script>
+        
+    </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv Chaurasiya | Professional Web Designer & Developer</title>
+    <meta name="description" content="Dhruv Chaurasiya — Professional Web Designer & Full Stack Developer specializing in modern web design, WordPress development, and frontend solutions. Creating stunning digital experiences.">
+    <meta name="keywords" content="web designer, web developer, wordpress developer, full stack developer, Dhruv Chaurasiya, portfolio, HTML, CSS, JavaScript">
+    <meta name="author" content="Dhruv Chaurasiya">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dhruv Chaurasiya | Professional Web Designer & Developer">
+    <meta property="og:description" content="Professional Web Designer & Full Stack Developer creating stunning digital experiences.">
+    <meta property="og:type" content="website">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/916389757585" target="_blank" class="whatsapp-float" id="whatsappFloat" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with me!</span>
+    </a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">D</span>hruv<span class="logo-dot">.</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">
+                <i class="fas fa-briefcase"></i>
+                <span>Hire Me</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+        <canvas class="hero-particles" id="heroParticles"></canvas>
+        <div class="hero-gradient-orb hero-orb-1"></div>
+        <div class="hero-gradient-orb hero-orb-2"></div>
+        <div class="hero-gradient-orb hero-orb-3"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for Freelance Work
+            </div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Dhruv Chaurasiya</span><br>
+                <span class="hero-role" id="typingText"></span>
+                <span class="typing-cursor">|</span>
+            </h1>
+            <p class="hero-description">
+                I craft beautiful, responsive, and user-centric websites &amp; digital experiences
+                that help businesses stand out in the digital landscape. From stunning designs to
+                full-stack solutions — I bring your vision to life.
+            </p>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="https://wa.me/916389757585?text=Hi%20Dhruv%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="btn btn-secondary">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Book Appointment</span>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Hire Me</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="50">0</span>+
+                    <span class="hero-stat-label">Projects</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="30">0</span>+
+                    <span class="hero-stat-label">Happy Clients</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="3">0</span>+
+                    <span class="hero-stat-label">Years Exp.</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+            <span class="scroll-mouse">
+                <span class="scroll-wheel"></span>
+            </span>
+            <span class="scroll-text">Scroll Down</span>
+        </a>
+    </section>
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+                <h2 class="section-title">Passionate About Creating <span class="gradient-text">Digital Excellence</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper" data-animate>
+                    <div class="about-image">
+                        <img src="images/profile.png" alt="Dhruv Chaurasiya - Professional Web Designer" id="profileImage">
+                        <div class="about-image-border"></div>
+                        <div class="about-image-glow"></div>
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="experience-number">3+</span>
+                        <span class="experience-text">Years of<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content" data-animate>
+                    <h3 class="about-heading">Web Designer & Full Stack Developer Based in India</h3>
+                    <p class="about-text">
+                        I'm <strong>Dhruv Chaurasiya</strong>, a passionate web designer and full stack developer with expertise in creating
+                        visually stunning and highly functional websites. I specialize in crafting
+                        modern, responsive designs using HTML, CSS, and JavaScript, as well as
+                        building professional WordPress websites that drive real results for businesses.
+                    </p>
+                    <p class="about-text">
+                        With proficiency in the complete Microsoft Office suite and a strong foundation
+                        in mathematics, I bring analytical thinking and creative problem-solving to every
+                        project. My goal is to transform your vision into a digital reality that not only
+                        looks amazing but also delivers an exceptional user experience.
+                    </p>
+                    <!-- Education -->
+                    <div class="about-education">
+                        <h4><i class="fas fa-graduation-cap"></i> Education & Qualifications</h4>
+                        <div class="education-list">
+                            <div class="education-item">
+                                <span class="edu-dot"></span>
+                                <div>
+                                    <strong>BSc (Pursuing)</strong>
+                                    <span>Mathematics</span>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <span class="edu-dot"></span>
+                                <div>
+                                    <strong>O-Level Diploma</strong>
+                                    <span>Computer Applications</span>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <span class="edu-dot"></span>
+                                <div>
+                                    <strong>Class 12th</strong>
+                                    <span>Mathematics Stream</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-info-grid">
+                        <div class="about-info-item">
+                            <span class="info-label"><i class="fas fa-user"></i> Name</span>
+                            <span class="info-value">Dhruv Chaurasiya</span>
+                        </div>
+                        <div class="about-info-item">
+                            <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span>
+                            <span class="info-value">India</span>
+                        </div>
+                        <div class="about-info-item">
+                            <span class="info-label"><i class="fas fa-briefcase"></i> Experience</span>
+                            <span class="info-value">3+ Years</span>
+                        </div>
+                        <div class="about-info-item">
+                            <span class="info-label"><i class="fas fa-circle-check"></i> Availability</span>
+                            <span class="info-value available">Open to Work</span>
+                        </div>
+                    </div>
+                    <div class="about-cta-group">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Let's Work Together</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://wa.me/916389757585" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp Me</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============ SKILLS SECTION ============ -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag"><i class="fas fa-cogs"></i> My Skills</span>
+                <h2 class="section-title">Technologies & Tools I <span class="gradient-text">Master</span></h2>
+                <p class="section-subtitle">A comprehensive toolkit for building complete digital solutions</p>
+            </div>
+            <div class="skills-grid" data-animate>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+                    <h4 class="skill-name">HTML5</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="95"><span class="skill-percent">95%</span></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+                    <h4 class="skill-name">CSS3</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="92"><span class="skill-percent">92%</span></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon js"><i class="fab fa-js-square"></i></div>
+                    <h4 class="skill-name">JavaScript</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="85"><span class="skill-percent">85%</span></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon wp"><i class="fab fa-wordpress"></i></div>
+                    <h4 class="skill-name">WordPress</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="90"><span class="skill-percent">90%</span></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon fullstack"><i class="fas fa-layer-group"></i></div>
+                    <h4 class="skill-name">Full Stack</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="82"><span class="skill-percent">82%</span></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon responsive"><i class="fas fa-mobile-alt"></i></div>
+                    <h4 class="skill-name">Responsive Design</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="95"><span class="skill-percent">95%</span></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon msoffice"><i class="fas fa-file-excel"></i></div>
+                    <h4 class="skill-name">MS Office</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="90"><span class="skill-percent">90%</span></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon design"><i class="fas fa-paint-brush"></i></div>
+                    <h4 class="skill-name">UI/UX Design</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="88"><span class="skill-percent">88%</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============ SERVICES SECTION ============ -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag"><i class="fas fa-concierge-bell"></i> What I Do</span>
+                <h2 class="section-title">Services I <span class="gradient-text">Offer</span></h2>
+                <p class="section-subtitle">Delivering high-quality digital solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid" data-animate>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-palette"></i></div>
+                    <div class="service-number">01</div>
+                    <h3 class="service-title">Web Design</h3>
+                    <p class="service-description">
+                        Creating visually stunning, modern website designs that captivate
+                        your audience and reflect your brand identity perfectly.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom Design Layouts</li>
+                        <li><i class="fas fa-check"></i> Modern UI/UX Principles</li>
+                        <li><i class="fas fa-check"></i> Brand-Aligned Aesthetics</li>
+                    </ul>
+                    <a href="https://wa.me/916389757585?text=Hi%20Dhruv%2C%20I%20need%20Web%20Design%20services." target="_blank" class="service-cta">
+                        Get Started <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-badge">Most Popular</div>
+                    <div class="service-icon"><i class="fab fa-wordpress"></i></div>
+                    <div class="service-number">02</div>
+                    <h3 class="service-title">WordPress Development</h3>
+                    <p class="service-description">
+                        Building professional, fully-functional WordPress websites with
+                        custom themes, plugins, and seamless content management.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom Theme Development</li>
+                        <li><i class="fas fa-check"></i> Plugin Integration</li>
+                        <li><i class="fas fa-check"></i> SEO Optimization</li>
+                    </ul>
+                    <a href="https://wa.me/916389757585?text=Hi%20Dhruv%2C%20I%20need%20WordPress%20Development." target="_blank" class="service-cta">
+                        Get Started <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <div class="service-number">03</div>
+                    <h3 class="service-title">Full Stack Development</h3>
+                    <p class="service-description">
+                        Developing complete, responsive, high-performance web applications
+                        using modern HTML, CSS, JavaScript, and backend technologies.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Clean, Semantic Code</li>
+                        <li><i class="fas fa-check"></i> Cross-Browser Support</li>
+                        <li><i class="fas fa-check"></i> Performance Optimized</li>
+                    </ul>
+                    <a href="https://wa.me/916389757585?text=Hi%20Dhruv%2C%20I%20need%20Full%20Stack%20Development." target="_blank" class="service-cta">
+                        Get Started <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-file"></i></div>
+                    <div class="service-number">04</div>
+                    <h3 class="service-title">MS Office Solutions</h3>
+                    <p class="service-description">
+                        Professional document creation, data management, and
+                        presentation design using the complete Microsoft Office suite.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Excel Data Solutions</li>
+                        <li><i class="fas fa-check"></i> PowerPoint Presentations</li>
+                        <li><i class="fas fa-check"></i> Word Document Design</li>
+                    </ul>
+                    <a href="https://wa.me/916389757585?text=Hi%20Dhruv%2C%20I%20need%20MS%20Office%20Solutions." target="_blank" class="service-cta">
+                        Get Started <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============ PORTFOLIO SECTION ============ -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag"><i class="fas fa-briefcase"></i> My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A showcase of my recent work and creative solutions</p>
+            </div>
+            <div class="portfolio-filters" data-animate>
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web-design">Web Design</button>
+                <button class="filter-btn" data-filter="wordpress">WordPress</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+            <div class="portfolio-grid" data-animate>
+                <div class="portfolio-item" data-category="web-design">
+                    <div class="portfolio-image">
+                        <img src="images/project1.png" alt="LuxeShop E-commerce Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Web Design</span>
+                                <h3 class="portfolio-title">LuxeShop</h3>
+                                <p class="portfolio-desc">Premium E-commerce Experience</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wordpress">
+                    <div class="portfolio-image">
+                        <img src="images/project2.png" alt="Flavor House Restaurant">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">WordPress</span>
+                                <h3 class="portfolio-title">Flavor House</h3>
+                                <p class="portfolio-desc">Restaurant & Café Website</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="fullstack">
+                    <div class="portfolio-image">
+                        <img src="images/project3.png" alt="CreativeX Agency">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Full Stack</span>
+                                <h3 class="portfolio-title">CreativeX</h3>
+                                <p class="portfolio-desc">Digital Agency Platform</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wordpress">
+                    <div class="portfolio-image">
+                        <img src="images/project4.png" alt="BlogSphere Platform">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">WordPress</span>
+                                <h3 class="portfolio-title">BlogSphere</h3>
+                                <p class="portfolio-desc">Modern Content Platform</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web-design">
+                    <div class="portfolio-image">
+                        <img src="images/project5.png" alt="FitZone Fitness">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Web Design</span>
+                                <h3 class="portfolio-title">FitZone</h3>
+                                <p class="portfolio-desc">Fitness Studio Website</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="fullstack">
+                    <div class="portfolio-image">
+                        <img src="images/project6.png" alt="CloudDash Dashboard">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Full Stack</span>
+                                <h3 class="portfolio-title">CloudDash</h3>
+                                <p class="portfolio-desc">SaaS Dashboard Interface</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link" title="View Project"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="portfolio-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============ TESTIMONIALS SECTION ============ -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag"><i class="fas fa-star"></i> Testimonials</span>
+                <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+            </div>
+            <div class="testimonials-wrapper" data-animate>
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">
+                            "Dhruv created an exceptional website for our business. His attention to
+                            detail and creative vision truly exceeded our expectations. The design is
+                            modern, responsive, and our customers absolutely love it!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><span>RK</span></div>
+                            <div class="author-info">
+                                <h4 class="author-name">Rajesh Kumar</h4>
+                                <span class="author-role">Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">
+                            "Working with Dhruv was a fantastic experience. He built a beautiful
+                            WordPress site that's easy to manage and looks incredibly professional.
+                            Highly recommended for anyone needing a talented web designer!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><span>PS</span></div>
+                            <div class="author-info">
+                                <h4 class="author-name">Priya Sharma</h4>
+                                <span class="author-role">Startup Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">
+                            "Dhruv's expertise in both design and development is remarkable. He
+                            delivered a pixel-perfect website on time and was always responsive to
+                            feedback. A true professional in every sense of the word!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><span>AP</span></div>
+                            <div class="author-info">
+                                <h4 class="author-name">Amit Patel</h4>
+                                <span class="author-role">Marketing Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="testimonial-btn prev" id="testPrev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots" id="testDots">
+                        <button class="dot active" data-slide="0" aria-label="Testimonial 1"></button>
+                        <button class="dot" data-slide="1" aria-label="Testimonial 2"></button>
+                        <button class="dot" data-slide="2" aria-label="Testimonial 3"></button>
+                    </div>
+                    <button class="testimonial-btn next" id="testNext" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag"><i class="fas fa-envelope"></i> Get In Touch</span>
+                <h2 class="section-title">Let's Build Something <span class="gradient-text">Amazing</span></h2>
+                <p class="section-subtitle">Have a project in mind? I'd love to hear about it. Let's discuss how we can work together.</p>
+            </div>
+            <div class="contact-grid" data-animate>
+                <div class="contact-info">
+                    <div class="contact-info-card">
+                        <div class="contact-icon whatsapp-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/916389757585" target="_blank">+91 6389757585</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon email-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Me</h4>
+                            <a href="mailto:dhruvchaurasia436@gmail.com">dhruvchaurasia436@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <h4>Follow Me On</h4>
+                        <div class="social-links">
+                            <a href="https://instagram.com/" target="_blank" class="social-link instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://facebook.com/" target="_blank" class="social-link facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://linkedin.com/" target="_blank" class="social-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/" target="_blank" class="social-link github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/916389757585?text=Hi%20Dhruv%2C%20I%20want%20to%20hire%20you%20for%20a%20project." target="_blank" class="btn btn-whatsapp btn-full">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Hire Me on WhatsApp</span>
+                    </a>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="contactName" name="name" placeholder=" " required>
+                            <label for="contactName">Your Name</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" name="email" placeholder=" " required>
+                            <label for="contactEmail">Your Email</label>
+                            <span class="form-line"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contactSubject" name="subject" placeholder=" " required>
+                        <label for="contactSubject">Subject</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" name="message" rows="5" placeholder=" " required></textarea>
+                        <label for="contactMessage">Your Message</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Thank you! Your message has been sent successfully. I'll get back to you soon!</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">
+                        <span class="logo-text">D</span>hruv<span class="logo-dot">.</span>
+                    </a>
+                    <p>Crafting stunning digital experiences that make a real impact. Let's build something amazing together.</p>
+                    <div class="footer-socials">
+                        <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <a href="#services">Web Design</a>
+                    <a href="#services">WordPress Development</a>
+                    <a href="#services">Full Stack Development</a>
+                    <a href="#services">MS Office Solutions</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <a href="https://wa.me/916389757585"><i class="fab fa-whatsapp"></i> +91 6389757585</a>
+                    <a href="mailto:dhruvchaurasia436@gmail.com"><i class="fas fa-envelope"></i> dhruvchaurasia436@gmail.com</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> India</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dhruv Chaurasiya. All Rights Reserved.</p>
+                <p>Designed & Built with <i class="fas fa-heart"></i> by Dhruv</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
